@@ -1575,3 +1575,18 @@ h5 {
 .team-slider-wrap {
   position: relative;
 }
+.more {
+  display: none;
+
+}
+.myReadBtn {
+  border-bottom: 1px solid #5AAFAF;
+  margin-top: 5px;
+  color: #5AAFAF;
+}
+@media(max-width: 575px){
+  .myReadBtn {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

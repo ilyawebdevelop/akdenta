@@ -194,3 +194,36 @@ var mySwiperBlog = new Swiper(blogSlider, {
   },
 });
 
+btnTextAll = document.querySelectorAll('.myReadBtn');
+
+btnTextAll.forEach(el => {
+  var dots = el.closest('.services-slide').querySelector('.dots');
+  var moreText = el.closest('.services-slide').querySelector('.more');
+  el.addEventListener('click', () => {
+    moreText.style.display = "inline";
+    dots.style.display = "none";
+    el.style.display = "none";
+  });
+});
+
+const introSlider = document.querySelector('.introSlider');
+var mySwiperIntro = new Swiper(introSlider, {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 800,
+  breakpoints: {
+    0: {
+
+    },
+    576: {
+
+    },
+  },
+});
