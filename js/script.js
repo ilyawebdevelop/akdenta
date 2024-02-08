@@ -196,12 +196,10 @@ var mySwiperBlog = new Swiper(blogSlider, {
 
 btnTextAll = document.querySelectorAll('.myReadBtn');
 
-btnTextAll.forEach(el => {
-  var dots = el.closest('.services-slide').querySelector('.dots');
+btnTextAll.forEach(el => { 
   var moreText = el.closest('.services-slide').querySelector('.more');
   el.addEventListener('click', () => {
-    moreText.style.display = "inline";
-    dots.style.display = "none";
+    moreText.style.display = "inline";   
     el.style.display = "none";
   });
 });
